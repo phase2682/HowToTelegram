@@ -77,7 +77,7 @@ def LedStatus(update, context):
 	
 #action to take with text messages from non authorized users
 def non_user(update, context):
-	context.bot.send_message(chat_id=update.effective_chat.id, text="Sorry but you are not an authorized user.  Don't go away mad, just go away!")
+	context.bot.send_message(chat_id=update.effective_chat.id, text="Sorry but you are not an authorized user.")
 	context.bot.send_message(chat_id=you, text="Access attempted by " + str(update.effective_chat.id))
 
 #action to take with an unknown command
