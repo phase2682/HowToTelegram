@@ -17,7 +17,7 @@ def action(update, context):
 	print('The message is: '+ str(message))
 	print ('sending a reply')
 	if 'cq' in message or 'CQ' in message:
-		context.bot.send_message(chat_id, str(chat_id) +' de AI6XG')
+		context.bot.send_message(chat_id, str(chat_id) +' de ur callsign')
 	elif 'date' in message or 'Date' in message:
 	    context.bot.send_message(chat_id, str('Date: ') + now.strftime ("%B %d, %Y UTC"))
 	else:
